@@ -23,6 +23,11 @@
 		4D4051CF34884E3AA5F278C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536163EF3CB480896E925B7 /* libPods.a */; };
 		5267C54F185397B5001C4889 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C54E185397B5001C4889 /* TwitterClient.m */; };
 		5267C5531853A187001C4889 /* NotebookListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5521853A187001C4889 /* NotebookListVC.m */; };
+		5267C5551853A7CC001C4889 /* NotebookList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5541853A7CC001C4889 /* NotebookList.xib */; };
+		5267C5581853AACA001C4889 /* NotebookTextItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5571853AACA001C4889 /* NotebookTextItemCell.m */; };
+		5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267C55B1853B1B6001C4889 /* NotebookTextItemCell.xib */; };
+		5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267C55D1853B1DE001C4889 /* NotebookImageItemCell.xib */; };
+		5267C5611853B1F6001C4889 /* NotebookImageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5601853B1F6001C4889 /* NotebookImageItemCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,13 @@
 		5267C54E185397B5001C4889 /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterClient.m; sourceTree = "<group>"; };
 		5267C5511853A187001C4889 /* NotebookListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookListVC.h; sourceTree = "<group>"; };
 		5267C5521853A187001C4889 /* NotebookListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookListVC.m; sourceTree = "<group>"; };
+		5267C5541853A7CC001C4889 /* NotebookList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookList.xib; sourceTree = "<group>"; };
+		5267C5561853AACA001C4889 /* NotebookTextItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookTextItemCell.h; sourceTree = "<group>"; };
+		5267C5571853AACA001C4889 /* NotebookTextItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookTextItemCell.m; sourceTree = "<group>"; };
+		5267C55B1853B1B6001C4889 /* NotebookTextItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookTextItemCell.xib; sourceTree = "<group>"; };
+		5267C55D1853B1DE001C4889 /* NotebookImageItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookImageItemCell.xib; sourceTree = "<group>"; };
+		5267C55F1853B1F6001C4889 /* NotebookImageItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookImageItemCell.h; sourceTree = "<group>"; };
+		5267C5601853B1F6001C4889 /* NotebookImageItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookImageItemCell.m; sourceTree = "<group>"; };
 		8536163EF3CB480896E925B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,7 +139,14 @@
 				454190C91852F584005B09D6 /* TaskListVC.h */,
 				454190CA1852F584005B09D6 /* TaskListVC.m */,
 				5267C5511853A187001C4889 /* NotebookListVC.h */,
+				5267C5541853A7CC001C4889 /* NotebookList.xib */,
 				5267C5521853A187001C4889 /* NotebookListVC.m */,
+				5267C55D1853B1DE001C4889 /* NotebookImageItemCell.xib */,
+				5267C55F1853B1F6001C4889 /* NotebookImageItemCell.h */,
+				5267C5601853B1F6001C4889 /* NotebookImageItemCell.m */,
+				5267C5561853AACA001C4889 /* NotebookTextItemCell.h */,
+				5267C5571853AACA001C4889 /* NotebookTextItemCell.m */,
+				5267C55B1853B1B6001C4889 /* NotebookTextItemCell.xib */,
 				454190AA1852E7BC005B09D6 /* Images.xcassets */,
 				4541909F1852E7BC005B09D6 /* Supporting Files */,
 				5267C550185398C9001C4889 /* API */,
@@ -250,8 +269,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */,
 				454190A31852E7BC005B09D6 /* InfoPlist.strings in Resources */,
+				5267C5551853A7CC001C4889 /* NotebookList.xib in Resources */,
 				454190AB1852E7BC005B09D6 /* Images.xcassets in Resources */,
+				5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +326,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5267C54F185397B5001C4889 /* TwitterClient.m in Sources */,
+				5267C5581853AACA001C4889 /* NotebookTextItemCell.m in Sources */,
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
+				5267C5611853B1F6001C4889 /* NotebookImageItemCell.m in Sources */,
 				454190CB1852F584005B09D6 /* TaskListVC.m in Sources */,
 				5267C5531853A187001C4889 /* NotebookListVC.m in Sources */,
 				454190A51852E7BC005B09D6 /* main.m in Sources */,
