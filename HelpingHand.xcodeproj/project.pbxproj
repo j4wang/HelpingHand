@@ -35,6 +35,8 @@
 		5267C5681853B709001C4889 /* Screen2HelpQuestion.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5641853B709001C4889 /* Screen2HelpQuestion.png */; };
 		5267C5691853B709001C4889 /* TwitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5651853B709001C4889 /* TwitterButton.png */; };
 		5267C56C1853B73B001C4889 /* HHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C56B1853B73B001C4889 /* HHLoginViewController.m */; };
+		5267C5711853CCA2001C4889 /* Checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C56F1853CCA2001C4889 /* Checked.png */; };
+		5267C5721853CCA2001C4889 /* Unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5701853CCA2001C4889 /* Unchecked.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		5267C5651853B709001C4889 /* TwitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterButton.png; sourceTree = "<group>"; };
 		5267C56A1853B73B001C4889 /* HHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHLoginViewController.h; path = HelpingHand/HHLoginViewController.h; sourceTree = "<group>"; };
 		5267C56B1853B73B001C4889 /* HHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHLoginViewController.m; path = HelpingHand/HHLoginViewController.m; sourceTree = "<group>"; };
+		5267C56F1853CCA2001C4889 /* Checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Checked.png; sourceTree = "<group>"; };
+		5267C5701853CCA2001C4889 /* Unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unchecked.png; sourceTree = "<group>"; };
 		8536163EF3CB480896E925B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -224,6 +228,8 @@
 		5267C56E1853B788001C4889 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				5267C56F1853CCA2001C4889 /* Checked.png */,
+				5267C5701853CCA2001C4889 /* Unchecked.png */,
 				47373CA61853BAAD0051E619 /* HHSplash.png */,
 				5267C5621853B709001C4889 /* HHLogo.png */,
 				5267C5631853B709001C4889 /* OrangeBackground.png */,
@@ -312,11 +318,13 @@
 			files = (
 				5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */,
 				454190A31852E7BC005B09D6 /* InfoPlist.strings in Resources */,
+				5267C5721853CCA2001C4889 /* Unchecked.png in Resources */,
 				47373CA71853BAAD0051E619 /* HHSplash.png in Resources */,
 				5267C5671853B709001C4889 /* OrangeBackground.png in Resources */,
 				5267C5551853A7CC001C4889 /* NotebookList.xib in Resources */,
 				454190AB1852E7BC005B09D6 /* Images.xcassets in Resources */,
 				5267C5681853B709001C4889 /* Screen2HelpQuestion.png in Resources */,
+				5267C5711853CCA2001C4889 /* Checked.png in Resources */,
 				5267C5661853B709001C4889 /* HHLogo.png in Resources */,
 				5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */,
 				5267C5691853B709001C4889 /* TwitterButton.png in Resources */,
