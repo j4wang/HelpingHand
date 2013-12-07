@@ -17,7 +17,7 @@
                         <rect key="frame" x="-5" y="0.0" width="66" height="59"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Drag and Drop content to your notebook to build your study track" translatesAutoresizingMaskIntoConstraints="NO" id="fPP-lf-MXa">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Drag and Drop content to your notebook to build your study track" translatesAutoresizingMaskIntoConstraints="NO" id="fPP-lf-MXa">
                         <rect key="frame" x="69" y="3" width="240" height="67"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>

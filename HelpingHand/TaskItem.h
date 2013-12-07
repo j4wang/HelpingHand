@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *imageFile;
+@property (strong, nonatomic) NSString *description;
 @property (nonatomic) BOOL completed;
 
 

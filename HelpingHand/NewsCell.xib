@@ -37,7 +37,7 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="My goal is to become a teacher. I am looking for a mentor." translatesAutoresizingMaskIntoConstraints="NO" id="xTS-4v-cgd">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="My goal is to become a teacher. I am looking for a mentor." translatesAutoresizingMaskIntoConstraints="NO" id="xTS-4v-cgd">
                         <rect key="frame" x="69" y="41" width="249" height="63"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,6 +49,7 @@
             <connections>
                 <outlet property="descriptionText" destination="xTS-4v-cgd" id="xwl-cJ-96l"/>
                 <outlet property="nameLabel" destination="WAG-Wo-9Ia" id="kjE-ZH-Le3"/>
+                <outlet property="profileImage" destination="8Sw-SA-w8M" id="b8j-Zx-237"/>
             </connections>
         </tableViewCell>
     </objects>

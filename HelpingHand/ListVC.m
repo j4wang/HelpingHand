@@ -27,11 +27,11 @@
         if (!self.taskList){
             TaskItem *item1 = [[TaskItem alloc] init];
             item1.title = @"Business Writing";
-            item1.imageFile = @"biz_writing.jpg";
+            item1.imageFile = @"NotebookIcon.png";
             item1.completed = NO;
             TaskItem *item2 = [[TaskItem alloc] init];
             item2.title = @"Funding";
-            item2.imageFile = @"funding.jpg";
+            item2.imageFile = @"MarketplaceIcon.png";
             item2.completed = NO;
             TaskItem *item3 = [[TaskItem alloc] init];
             item3.title = @"Setting up business";
@@ -39,11 +39,11 @@
             item3.completed = NO;
             TaskItem *item4 = [[TaskItem alloc] init];
             item4.title = @"Hiring";
-            item4.imageFile = @"hiring.jpg";
+            item4.imageFile = @"JinyaIcon.png";
             item3.completed = NO;
             TaskItem *item5 = [[TaskItem alloc] init];
             item3.title = @"Resources";
-            item3.imageFile = @"resource.jpg";
+            item3.imageFile = @"BankIcon.jpg";
             item3.completed = NO;
             TaskItem *item6 = [[TaskItem alloc] init];
             item3.title = @"How to Grow";
