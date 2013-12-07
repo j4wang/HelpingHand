@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TaskListVC.h"
+#import "HHSplashViewController.h"
 
 @implementation AppDelegate
 
