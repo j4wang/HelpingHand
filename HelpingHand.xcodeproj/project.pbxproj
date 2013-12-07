@@ -28,6 +28,11 @@
 		5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267C55B1853B1B6001C4889 /* NotebookTextItemCell.xib */; };
 		5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5267C55D1853B1DE001C4889 /* NotebookImageItemCell.xib */; };
 		5267C5611853B1F6001C4889 /* NotebookImageItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5601853B1F6001C4889 /* NotebookImageItemCell.m */; };
+		5267C5661853B709001C4889 /* HHLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5621853B709001C4889 /* HHLogo.png */; };
+		5267C5671853B709001C4889 /* OrangeBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5631853B709001C4889 /* OrangeBackground.png */; };
+		5267C5681853B709001C4889 /* Screen2HelpQuestion.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5641853B709001C4889 /* Screen2HelpQuestion.png */; };
+		5267C5691853B709001C4889 /* TwitterButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5267C5651853B709001C4889 /* TwitterButton.png */; };
+		5267C56C1853B73B001C4889 /* HHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C56B1853B73B001C4889 /* HHLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,12 @@
 		5267C55D1853B1DE001C4889 /* NotebookImageItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotebookImageItemCell.xib; sourceTree = "<group>"; };
 		5267C55F1853B1F6001C4889 /* NotebookImageItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookImageItemCell.h; sourceTree = "<group>"; };
 		5267C5601853B1F6001C4889 /* NotebookImageItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookImageItemCell.m; sourceTree = "<group>"; };
+		5267C5621853B709001C4889 /* HHLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HHLogo.png; sourceTree = "<group>"; };
+		5267C5631853B709001C4889 /* OrangeBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OrangeBackground.png; sourceTree = "<group>"; };
+		5267C5641853B709001C4889 /* Screen2HelpQuestion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen2HelpQuestion.png; sourceTree = "<group>"; };
+		5267C5651853B709001C4889 /* TwitterButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwitterButton.png; sourceTree = "<group>"; };
+		5267C56A1853B73B001C4889 /* HHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHLoginViewController.h; path = HelpingHand/HHLoginViewController.h; sourceTree = "<group>"; };
+		5267C56B1853B73B001C4889 /* HHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHLoginViewController.m; path = HelpingHand/HHLoginViewController.m; sourceTree = "<group>"; };
 		8536163EF3CB480896E925B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,6 +159,8 @@
 				5267C5571853AACA001C4889 /* NotebookTextItemCell.m */,
 				5267C55B1853B1B6001C4889 /* NotebookTextItemCell.xib */,
 				454190AA1852E7BC005B09D6 /* Images.xcassets */,
+				5267C56E1853B788001C4889 /* images */,
+				5267C56D1853B75D001C4889 /* HelpingHand */,
 				4541909F1852E7BC005B09D6 /* Supporting Files */,
 				5267C550185398C9001C4889 /* API */,
 			);
@@ -190,6 +203,26 @@
 				5267C54E185397B5001C4889 /* TwitterClient.m */,
 			);
 			name = API;
+			sourceTree = "<group>";
+		};
+		5267C56D1853B75D001C4889 /* HelpingHand */ = {
+			isa = PBXGroup;
+			children = (
+				5267C56A1853B73B001C4889 /* HHLoginViewController.h */,
+				5267C56B1853B73B001C4889 /* HHLoginViewController.m */,
+			);
+			name = HelpingHand;
+			sourceTree = "<group>";
+		};
+		5267C56E1853B788001C4889 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				5267C5621853B709001C4889 /* HHLogo.png */,
+				5267C5631853B709001C4889 /* OrangeBackground.png */,
+				5267C5641853B709001C4889 /* Screen2HelpQuestion.png */,
+				5267C5651853B709001C4889 /* TwitterButton.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,9 +304,13 @@
 			files = (
 				5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */,
 				454190A31852E7BC005B09D6 /* InfoPlist.strings in Resources */,
+				5267C5671853B709001C4889 /* OrangeBackground.png in Resources */,
 				5267C5551853A7CC001C4889 /* NotebookList.xib in Resources */,
 				454190AB1852E7BC005B09D6 /* Images.xcassets in Resources */,
+				5267C5681853B709001C4889 /* Screen2HelpQuestion.png in Resources */,
+				5267C5661853B709001C4889 /* HHLogo.png in Resources */,
 				5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */,
+				5267C5691853B709001C4889 /* TwitterButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +364,7 @@
 			files = (
 				5267C54F185397B5001C4889 /* TwitterClient.m in Sources */,
 				5267C5581853AACA001C4889 /* NotebookTextItemCell.m in Sources */,
+				5267C56C1853B73B001C4889 /* HHLoginViewController.m in Sources */,
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
 				5267C5611853B1F6001C4889 /* NotebookImageItemCell.m in Sources */,
 				454190CB1852F584005B09D6 /* TaskListVC.m in Sources */,
