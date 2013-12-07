@@ -1,5 +1,5 @@
 //
-//  TaskDetailVC.h
+//  NotebookListHeader.h
 //  HelpingHand
 //
 //  Created by John on 12/7/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotebookListVC : UIViewController
+@interface NotebookListHeader : UIView
 
 @end

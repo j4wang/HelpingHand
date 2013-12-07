@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TaskListVC.h"
+#import "NotebookListTableVC.h"
 #import "HHSplashViewController.h"
 
 @implementation AppDelegate
@@ -17,7 +17,7 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    TaskListVC *tvc = [[TaskListVC alloc] init];
+    NotebookListTableVC *tvc = [[NotebookListTableVC alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tvc];
     self.window.rootViewController = nvc;
     
