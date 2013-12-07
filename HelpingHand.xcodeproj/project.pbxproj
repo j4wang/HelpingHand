@@ -76,6 +76,7 @@
 				4541909B1852E7BC005B09D6 /* CoreGraphics.framework in Frameworks */,
 				4541909D1852E7BC005B09D6 /* UIKit.framework in Frameworks */,
 				454190991852E7BC005B09D6 /* Foundation.framework in Frameworks */,
+				4D4051CF34884E3AA5F278C3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +101,7 @@
 				454190B71852E7BC005B09D6 /* HelpingHandTests */,
 				454190971852E7BC005B09D6 /* Frameworks */,
 				454190961852E7BC005B09D6 /* Products */,
+				CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +121,7 @@
 				4541909A1852E7BC005B09D6 /* CoreGraphics.framework */,
 				4541909C1852E7BC005B09D6 /* UIKit.framework */,
 				454190B11852E7BC005B09D6 /* XCTest.framework */,
+				8536163EF3CB480896E925B7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +132,8 @@
 				454190A71852E7BC005B09D6 /* AppDelegate.h */,
 				454190A81852E7BC005B09D6 /* AppDelegate.m */,
 				454190AA1852E7BC005B09D6 /* Images.xcassets */,
+				5267C56E1853B788001C4889 /* images */,
+				5267C56D1853B75D001C4889 /* HelpingHand */,
 				4541909F1852E7BC005B09D6 /* Supporting Files */,
 				4549F5411853A5730018BCA5 /* AnnouncementCell.h */,
 				4549F5421853A5730018BCA5 /* AnnouncementCell.m */,
@@ -188,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 454190C11852E7BC005B09D6 /* Build configuration list for PBXNativeTarget "HelpingHand" */;
 			buildPhases = (
+				CDF3ED6EBF2D442DA6AC99CE /* Check Pods Manifest.lock */,
 				454190911852E7BC005B09D6 /* Sources */,
 				454190921852E7BC005B09D6 /* Frameworks */,
 				454190931852E7BC005B09D6 /* Resources */,
+				FE55B59C0D9B47759E873D0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */,
 				454190A31852E7BC005B09D6 /* InfoPlist.strings in Resources */,
 				4549F5491853A9DC0018BCA5 /* NewsCell.xib in Resources */,
 				4549F5531853C7590018BCA5 /* ListVC.xib in Resources */,
@@ -273,6 +281,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDF3ED6EBF2D442DA6AC99CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE55B59C0D9B47759E873D0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		454190911852E7BC005B09D6 /* Sources */ = {
@@ -400,6 +441,7 @@
 		};
 		454190C21852E7BC005B09D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -413,6 +455,7 @@
 		};
 		454190C31852E7BC005B09D6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
