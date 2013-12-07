@@ -19,6 +19,7 @@
 		454190B41852E7BC005B09D6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4541909C1852E7BC005B09D6 /* UIKit.framework */; };
 		454190BC1852E7BC005B09D6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 454190BA1852E7BC005B09D6 /* InfoPlist.strings */; };
 		454190BE1852E7BC005B09D6 /* HelpingHandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 454190BD1852E7BC005B09D6 /* HelpingHandTests.m */; };
+		454190CB1852F584005B09D6 /* TaskListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 454190CA1852F584005B09D6 /* TaskListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		454190B91852E7BC005B09D6 /* HelpingHandTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelpingHandTests-Info.plist"; sourceTree = "<group>"; };
 		454190BB1852E7BC005B09D6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		454190BD1852E7BC005B09D6 /* HelpingHandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelpingHandTests.m; sourceTree = "<group>"; };
+		454190C91852F584005B09D6 /* TaskListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaskListVC.h; path = ../TaskListVC.h; sourceTree = "<group>"; };
+		454190CA1852F584005B09D6 /* TaskListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskListVC.m; path = ../TaskListVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 			children = (
 				454190A71852E7BC005B09D6 /* AppDelegate.h */,
 				454190A81852E7BC005B09D6 /* AppDelegate.m */,
+				454190C91852F584005B09D6 /* TaskListVC.h */,
+				454190CA1852F584005B09D6 /* TaskListVC.m */,
 				454190AA1852E7BC005B09D6 /* Images.xcassets */,
 				4541909F1852E7BC005B09D6 /* Supporting Files */,
 			);
@@ -240,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
+				454190CB1852F584005B09D6 /* TaskListVC.m in Sources */,
 				454190A51852E7BC005B09D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,6 +447,7 @@
 				454190C31852E7BC005B09D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		454190C41852E7BC005B09D6 /* Build configuration list for PBXNativeTarget "HelpingHandTests" */ = {
 			isa = XCConfigurationList;
@@ -449,6 +456,7 @@
 				454190C61852E7BC005B09D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
