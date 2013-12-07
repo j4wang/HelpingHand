@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 HelpingHand. All rights reserved.
 //
 
-#import "TaskDetailVC.h"
+#import "NotebookListVC.h"
 
-@interface TaskDetailVC ()
+@interface NotebookListVC ()
 
 @end
 
-@implementation TaskDetailVC
+@implementation NotebookListVC
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

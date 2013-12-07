@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TaskDetailVC : UIViewController
+@interface NotebookListVC : UIViewController
 
 @end

@@ -22,7 +22,7 @@
 		454190CB1852F584005B09D6 /* TaskListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 454190CA1852F584005B09D6 /* TaskListVC.m */; };
 		4D4051CF34884E3AA5F278C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536163EF3CB480896E925B7 /* libPods.a */; };
 		5267C54F185397B5001C4889 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C54E185397B5001C4889 /* TwitterClient.m */; };
-		5267C5531853A187001C4889 /* TaskDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5521853A187001C4889 /* TaskDetailVC.m */; };
+		5267C5531853A187001C4889 /* NotebookListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5521853A187001C4889 /* NotebookListVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +56,8 @@
 		454190CA1852F584005B09D6 /* TaskListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaskListVC.m; path = ../TaskListVC.m; sourceTree = "<group>"; };
 		5267C54D185397B5001C4889 /* TwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterClient.h; sourceTree = "<group>"; };
 		5267C54E185397B5001C4889 /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterClient.m; sourceTree = "<group>"; };
-		5267C5511853A187001C4889 /* TaskDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskDetailVC.h; sourceTree = "<group>"; };
-		5267C5521853A187001C4889 /* TaskDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskDetailVC.m; sourceTree = "<group>"; };
+		5267C5511853A187001C4889 /* NotebookListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookListVC.h; sourceTree = "<group>"; };
+		5267C5521853A187001C4889 /* NotebookListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotebookListVC.m; sourceTree = "<group>"; };
 		8536163EF3CB480896E925B7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB5FEE191EA5490381EB0A67 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,8 +126,8 @@
 				454190A81852E7BC005B09D6 /* AppDelegate.m */,
 				454190C91852F584005B09D6 /* TaskListVC.h */,
 				454190CA1852F584005B09D6 /* TaskListVC.m */,
-				5267C5511853A187001C4889 /* TaskDetailVC.h */,
-				5267C5521853A187001C4889 /* TaskDetailVC.m */,
+				5267C5511853A187001C4889 /* NotebookListVC.h */,
+				5267C5521853A187001C4889 /* NotebookListVC.m */,
 				454190AA1852E7BC005B09D6 /* Images.xcassets */,
 				4541909F1852E7BC005B09D6 /* Supporting Files */,
 				5267C550185398C9001C4889 /* API */,
@@ -306,7 +306,7 @@
 				5267C54F185397B5001C4889 /* TwitterClient.m in Sources */,
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
 				454190CB1852F584005B09D6 /* TaskListVC.m in Sources */,
-				5267C5531853A187001C4889 /* TaskDetailVC.m in Sources */,
+				5267C5531853A187001C4889 /* NotebookListVC.m in Sources */,
 				454190A51852E7BC005B09D6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
