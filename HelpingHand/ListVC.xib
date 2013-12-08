@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListVC">
+            <connections>
+                <outlet property="tableView" destination="oZF-Ia-ZzG" id="Ekh-M3-D93"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="oZF-Ia-ZzG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="18C-nS-rjW"/>
+                        <outlet property="delegate" destination="-1" id="utO-2Q-sJf"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lte-Y0-TQU">
+                    <rect key="frame" x="0.0" y="467" width="375" height="101"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="Button" image="BottomNavBar320.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Lte-Y0-TQU" firstAttribute="top" secondItem="oZF-Ia-ZzG" secondAttribute="bottom" constant="-1" id="9ar-NO-fQa"/>
+                <constraint firstAttribute="trailing" secondItem="oZF-Ia-ZzG" secondAttribute="trailing" id="ENL-BB-aHL"/>
+                <constraint firstItem="Lte-Y0-TQU" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="c8c-6N-EjE"/>
+                <constraint firstItem="Lte-Y0-TQU" firstAttribute="leading" secondItem="oZF-Ia-ZzG" secondAttribute="leading" id="dW5-Hy-EWz"/>
+                <constraint firstAttribute="bottom" secondItem="Lte-Y0-TQU" secondAttribute="bottom" id="uYQ-f4-nSg"/>
+                <constraint firstItem="oZF-Ia-ZzG" firstAttribute="top" secondItem="1" secondAttribute="top" id="vs4-m6-XNi"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BottomNavBar320.png" width="320" height="101"/>
+    </resources>
+</document>
