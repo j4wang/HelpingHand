@@ -6,6 +6,7 @@
 //
 
 #import "HHLoginViewController.h"
+#import "HHGoalViewController.h"
 
 @interface HHLoginViewController ()
 
@@ -41,6 +42,7 @@
         UIButton *signInButton = [UIButton buttonWithType:UIButtonTypeCustom];
         signInButton.frame = buttonFrame;
         [signInButton setBackgroundImage:signInTwitterImage forState:UIControlStateNormal];
+        [signInButton addTarget:self action:@selector(clickNext) forControlEvents:UIControlEventTouchUpInside];
         [_view addSubview:signInButton];
         
         UIImage *questionImage = [UIImage imageNamed:@"Screen2HelpQuestion.png"];
@@ -60,7 +62,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+
+- (void)clickNext {
+    HHGoalViewController *svc = [[HHGoalViewController alloc] init];
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
