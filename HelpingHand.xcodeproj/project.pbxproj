@@ -47,6 +47,12 @@
 		4549F5961853D7B20018BCA5 /* JinyaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5901853D7B20018BCA5 /* JinyaIcon.png */; };
 		4549F5971853D7B20018BCA5 /* MarketplaceIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5911853D7B20018BCA5 /* MarketplaceIcon.png */; };
 		4549F5981853D7B20018BCA5 /* NotebookIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5921853D7B20018BCA5 /* NotebookIcon.png */; };
+		4549F59C1853DFDB0018BCA5 /* HHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4549F59A1853DFDB0018BCA5 /* HHLoginViewController.m */; };
+		4549F5A11853E2680018BCA5 /* TopNavBarLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F59E1853E2680018BCA5 /* TopNavBarLeft.png */; };
+		4549F5A21853E2680018BCA5 /* TopNavBarRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F59F1853E2680018BCA5 /* TopNavBarRight.png */; };
+		4549F5A41853E63E0018BCA5 /* BottomNavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5A31853E63E0018BCA5 /* BottomNavBar.png */; };
+		4549F5A61853E9680018BCA5 /* BottomNavBar320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5A51853E9680018BCA5 /* BottomNavBar320.png */; };
+		4549F5A81853EE8A0018BCA5 /* TopNavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4549F5A71853EE8A0018BCA5 /* TopNavBar.png */; };
 		B786DE2B2C80489D9D2DB16B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B047A3C579D46389F756063 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +121,13 @@
 		4549F5901853D7B20018BCA5 /* JinyaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = JinyaIcon.png; path = HelpingHand/JinyaIcon.png; sourceTree = "<group>"; };
 		4549F5911853D7B20018BCA5 /* MarketplaceIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MarketplaceIcon.png; path = HelpingHand/MarketplaceIcon.png; sourceTree = "<group>"; };
 		4549F5921853D7B20018BCA5 /* NotebookIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NotebookIcon.png; path = HelpingHand/NotebookIcon.png; sourceTree = "<group>"; };
+		4549F59A1853DFDB0018BCA5 /* HHLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HHLoginViewController.m; path = HelpingHand/HHLoginViewController.m; sourceTree = "<group>"; };
+		4549F59B1853DFDB0018BCA5 /* HHLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HHLoginViewController.h; path = HelpingHand/HHLoginViewController.h; sourceTree = "<group>"; };
+		4549F59E1853E2680018BCA5 /* TopNavBarLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopNavBarLeft.png; sourceTree = "<group>"; };
+		4549F59F1853E2680018BCA5 /* TopNavBarRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopNavBarRight.png; sourceTree = "<group>"; };
+		4549F5A31853E63E0018BCA5 /* BottomNavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomNavBar.png; sourceTree = "<group>"; };
+		4549F5A51853E9680018BCA5 /* BottomNavBar320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BottomNavBar320.png; sourceTree = "<group>"; };
+		4549F5A71853EE8A0018BCA5 /* TopNavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopNavBar.png; sourceTree = "<group>"; };
 		45EE1C63B6834DBD8569F9E6 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +192,8 @@
 		4541909E1852E7BC005B09D6 /* HelpingHand */ = {
 			isa = PBXGroup;
 			children = (
+				4549F59A1853DFDB0018BCA5 /* HHLoginViewController.m */,
+				4549F59B1853DFDB0018BCA5 /* HHLoginViewController.h */,
 				4549F5881853D72C0018BCA5 /* TwitterClient.m */,
 				4549F5821853D7220018BCA5 /* NotebookImageItemCell.m */,
 				4549F5831853D7220018BCA5 /* NotebookListVC.m */,
@@ -251,6 +266,11 @@
 		4549F5661853D6920018BCA5 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				4549F5A71853EE8A0018BCA5 /* TopNavBar.png */,
+				4549F5A51853E9680018BCA5 /* BottomNavBar320.png */,
+				4549F5A31853E63E0018BCA5 /* BottomNavBar.png */,
+				4549F59E1853E2680018BCA5 /* TopNavBarLeft.png */,
+				4549F59F1853E2680018BCA5 /* TopNavBarRight.png */,
 				4549F5901853D7B20018BCA5 /* JinyaIcon.png */,
 				4549F5911853D7B20018BCA5 /* MarketplaceIcon.png */,
 				4549F5921853D7B20018BCA5 /* NotebookIcon.png */,
@@ -351,8 +371,12 @@
 				4549F5491853A9DC0018BCA5 /* NewsCell.xib in Resources */,
 				4549F5741853D6C60018BCA5 /* Unchecked.png in Resources */,
 				4549F5971853D7B20018BCA5 /* MarketplaceIcon.png in Resources */,
+				4549F5A81853EE8A0018BCA5 /* TopNavBar.png in Resources */,
 				4549F5711853D6C60018BCA5 /* OrangeBackground.png in Resources */,
 				4549F58B1853D7980018BCA5 /* BankIcon.png in Resources */,
+				4549F5A11853E2680018BCA5 /* TopNavBarLeft.png in Resources */,
+				4549F5A41853E63E0018BCA5 /* BottomNavBar.png in Resources */,
+				4549F5A21853E2680018BCA5 /* TopNavBarRight.png in Resources */,
 				4549F5701853D6C60018BCA5 /* HHSplash.png in Resources */,
 				4549F5531853C7590018BCA5 /* ListVC.xib in Resources */,
 				4549F5731853D6C60018BCA5 /* TwitterButton.png in Resources */,
@@ -360,6 +384,7 @@
 				4549F57D1853D7010018BCA5 /* NotebookImageItemCell.xib in Resources */,
 				4549F57F1853D7010018BCA5 /* NotebookTextItemCell.xib in Resources */,
 				4549F5981853D7B20018BCA5 /* NotebookIcon.png in Resources */,
+				4549F5A61853E9680018BCA5 /* BottomNavBar320.png in Resources */,
 				4549F5451853A7240018BCA5 /* AnnouncementCell.xib in Resources */,
 				4549F58E1853D7A30018BCA5 /* HatLogo.png in Resources */,
 				4549F58F1853D7A30018BCA5 /* HHIconforNewsFeed.png in Resources */,
@@ -424,6 +449,7 @@
 				4549F5521853C7590018BCA5 /* ListVC.m in Sources */,
 				4549F54C1853B9710018BCA5 /* NewsCell.m in Sources */,
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
+				4549F59C1853DFDB0018BCA5 /* HHLoginViewController.m in Sources */,
 				4549F53A18538B0A0018BCA5 /* TaskItem.m in Sources */,
 				4549F5871853D7220018BCA5 /* NotebookTextItemCell.m in Sources */,
 				4549F5851853D7220018BCA5 /* NotebookImageItemCell.m in Sources */,

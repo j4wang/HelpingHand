@@ -11,5 +11,6 @@
 
 @interface ListVC : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *bottomNav;
 
 @end

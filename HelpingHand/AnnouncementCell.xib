@@ -31,6 +31,7 @@
             </accessibility>
             <connections>
                 <outlet property="announcementContent" destination="fPP-lf-MXa" id="TrF-4K-FVi"/>
+                <outlet property="imageView" destination="T2W-W3-Vdv" id="zDa-Zf-zGW"/>
             </connections>
         </tableViewCell>
     </objects>

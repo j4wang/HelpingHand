@@ -11,5 +11,6 @@
 @interface AnnouncementCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UITextView *announcementContent;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end

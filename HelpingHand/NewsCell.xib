@@ -50,6 +50,7 @@
                 <outlet property="descriptionText" destination="xTS-4v-cgd" id="xwl-cJ-96l"/>
                 <outlet property="nameLabel" destination="WAG-Wo-9Ia" id="kjE-ZH-Le3"/>
                 <outlet property="profileImage" destination="8Sw-SA-w8M" id="b8j-Zx-237"/>
+                <outlet property="titleLabel" destination="mVi-6g-oqb" id="nxZ-NF-5p1"/>
             </connections>
         </tableViewCell>
     </objects>

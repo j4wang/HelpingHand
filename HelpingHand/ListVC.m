@@ -12,7 +12,7 @@
 #import "NewsCell.h"
 
 @interface ListVC ()
-@property (strong, nonatomic)NSMutableArray *taskList;
+@property (strong, nonatomic)NSArray *taskList;
 
 @end
 
@@ -28,27 +28,33 @@
             TaskItem *item1 = [[TaskItem alloc] init];
             item1.title = @"Business Writing";
             item1.imageFile = @"NotebookIcon.png";
+            item1.description = @"Drag and Drop your content to your notebook to build your study list";
             item1.completed = NO;
             TaskItem *item2 = [[TaskItem alloc] init];
             item2.title = @"Funding";
             item2.imageFile = @"MarketplaceIcon.png";
+            item2.description = @"Earn points by completing activities and use the Marketplace to trade them in";
             item2.completed = NO;
             TaskItem *item3 = [[TaskItem alloc] init];
-            item3.title = @"Setting up business";
-            item3.imageFile = @"office.jpg";
+            item3.title = @"Featured Member";
+            item3.name = @"Jinya Ramadi";
+            item3.imageFile = @"JinyaIcon.png";
+            item3.description = @"My goal is to become a teacher. I am looking for a mentor.";
             item3.completed = NO;
             TaskItem *item4 = [[TaskItem alloc] init];
-            item4.title = @"Hiring";
-            item4.imageFile = @"JinyaIcon.png";
-            item3.completed = NO;
+            item4.title = @"Finance";
+            item4.imageFile = @"BankIcon.png";
+            item4.description = @"Learn how to register your business by using bank.";
+            item4.completed = NO;
+            
             TaskItem *item5 = [[TaskItem alloc] init];
-            item3.title = @"Resources";
-            item3.imageFile = @"BankIcon.jpg";
-            item3.completed = NO;
+            item5.title = @"Resources";
+            item5.imageFile = @"BankIcon.jpg";
+            item5.completed = NO;
             TaskItem *item6 = [[TaskItem alloc] init];
-            item3.title = @"How to Grow";
-            item3.imageFile = @"growth.jpg";
-            item3.completed = NO;
+            item6.title = @"How to Grow";
+            item6.imageFile = @"growth.jpg";
+            item6.completed = NO;
             
             self.taskList = @[item1, item2, item3, item4, item5, item6];
         }
@@ -67,7 +73,9 @@
     
     //register custom cell
     UINib *newsCell = [UINib nibWithNibName:@"NewsCell" bundle:nil];
-    [self.tableView registerNib:newsCell                               forCellReuseIdentifier:@"NewsCell"];
+    [self.tableView registerNib:newsCell forCellReuseIdentifier:@"NewsCell"];
+    
+    self.bottomNav.image = [UIImage imageNamed:@"BottomNavBar.png"];
     
 }
 
@@ -86,7 +94,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,28 +104,34 @@
     //first 2 rows are announcement
     if (indexPath.row<2){
         AnnouncementCell *annCell = [tableView dequeueReusableCellWithIdentifier:AnnouncementCellId forIndexPath:indexPath];
+        annCell.announcementContent.text = [self.taskList[indexPath.row] description];
+        annCell.imageView.image = [UIImage imageNamed:[self.taskList[indexPath.row] imageFile]];
         return annCell;
     }
+    
+//    @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+//    
+//    @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+//    
+//    @property (weak, nonatomic) IBOutlet UIImageView *profileImage;
+//    @property (weak, nonatomic) IBOutlet UITextView *descriptionText;
     //next rows are news
     NewsCell *newsCell = [tableView dequeueReusableCellWithIdentifier:NewsCellId forIndexPath:indexPath];
+    newsCell.nameLabel.text = [self.taskList[indexPath.row] name];
+    newsCell.titleLabel.text = [self.taskList[indexPath.row] title];
+    newsCell.descriptionText.text = [self.taskList[indexPath.row] description];
+    newsCell.profileImage.image = [UIImage imageNamed:[self.taskList[indexPath.row] imageFile]];
     return newsCell;
     
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // static NSString *CellIdentifier = @"TweetCell";
-    // TweetCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    //  Tweet *tweet = self.tweets[indexPath.row];
-    //    NSAttributedString *tweetAttrText = [[NSAttributedString alloc] initWithString:tweet.text];
-    //    NSLog(@"tweet text:%@",tweet.text);
-    //    CGRect rect = [tweetAttrText boundingRectWithSize:CGSizeMake(self.view.bounds.size.width-40,CGFLOAT_MAX)
-    //                                              options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
-    //                                              context:nil];
-    //    CGSize textSize = [tweet.text sizeWithFont:[UIFont fontWithName: @"System" size: 14.0f]
-    //                              constrainedToSize:kLabelFrameMaxSize];
-
-    return 80;
+    if (indexPath.row==0)
+        return 60;
+    else if (indexPath.row==1)
+        return 70;
+    return 90;
 }
 
 

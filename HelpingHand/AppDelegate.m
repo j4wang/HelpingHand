@@ -18,6 +18,13 @@
     // Override point for customization after application launch.
     ListVC *tvc = [[ListVC alloc] init];
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tvc];
+    nvc.navigationBarHidden = YES;
+    //[nvc.navigationBar setBackgroundImage:[UIImage imageNamed:@"TopNavBar.png"]
+      //                  forBarMetrics: UIBarMetricsDefault];
+    
+
+   // [[UINavigationBar appearance] setBackgroundColor:[UIColor greenColor];
+
     self.window.rootViewController = nvc;
     
     self.window.backgroundColor = [UIColor whiteColor];
