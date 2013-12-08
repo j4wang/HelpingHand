@@ -22,6 +22,10 @@
 		454190CB1852F584005B09D6 /* TaskListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 454190CA1852F584005B09D6 /* TaskListVC.m */; };
 		47373CA51853B91C0051E619 /* HHSplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47373CA41853B91C0051E619 /* HHSplashViewController.m */; };
 		47373CA71853BAAD0051E619 /* HHSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 47373CA61853BAAD0051E619 /* HHSplash.png */; };
+		47373CAA1853C6110051E619 /* HHLearnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47373CA91853C6110051E619 /* HHLearnViewController.m */; };
+		47373CAF1853DEAB0051E619 /* HHGoalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47373CAE1853DEAB0051E619 /* HHGoalViewController.m */; };
+		47373CB11853E2900051E619 /* Screen4BG.png in Resources */ = {isa = PBXBuildFile; fileRef = 47373CB01853E2900051E619 /* Screen4BG.png */; };
+		47373CB81853EFBC0051E619 /* TopNavBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 47373CB71853EFBC0051E619 /* TopNavBar.png */; };
 		4D4051CF34884E3AA5F278C3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8536163EF3CB480896E925B7 /* libPods.a */; };
 		5267C54F185397B5001C4889 /* TwitterClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C54E185397B5001C4889 /* TwitterClient.m */; };
 		5267C5531853A187001C4889 /* NotebookListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5267C5521853A187001C4889 /* NotebookListVC.m */; };
@@ -69,6 +73,12 @@
 		47373CA31853B91C0051E619 /* HHSplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHSplashViewController.h; sourceTree = "<group>"; };
 		47373CA41853B91C0051E619 /* HHSplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHSplashViewController.m; sourceTree = "<group>"; };
 		47373CA61853BAAD0051E619 /* HHSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HHSplash.png; sourceTree = "<group>"; };
+		47373CA81853C6110051E619 /* HHLearnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHLearnViewController.h; sourceTree = "<group>"; };
+		47373CA91853C6110051E619 /* HHLearnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHLearnViewController.m; sourceTree = "<group>"; };
+		47373CAD1853DEAB0051E619 /* HHGoalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHGoalViewController.h; sourceTree = "<group>"; };
+		47373CAE1853DEAB0051E619 /* HHGoalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHGoalViewController.m; sourceTree = "<group>"; };
+		47373CB01853E2900051E619 /* Screen4BG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screen4BG.png; sourceTree = "<group>"; };
+		47373CB71853EFBC0051E619 /* TopNavBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TopNavBar.png; sourceTree = "<group>"; };
 		5267C54D185397B5001C4889 /* TwitterClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterClient.h; sourceTree = "<group>"; };
 		5267C54E185397B5001C4889 /* TwitterClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterClient.m; sourceTree = "<group>"; };
 		5267C5511853A187001C4889 /* NotebookListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotebookListVC.h; sourceTree = "<group>"; };
@@ -170,6 +180,10 @@
 				5267C550185398C9001C4889 /* API */,
 				47373CA31853B91C0051E619 /* HHSplashViewController.h */,
 				47373CA41853B91C0051E619 /* HHSplashViewController.m */,
+				47373CA81853C6110051E619 /* HHLearnViewController.h */,
+				47373CA91853C6110051E619 /* HHLearnViewController.m */,
+				47373CAD1853DEAB0051E619 /* HHGoalViewController.h */,
+				47373CAE1853DEAB0051E619 /* HHGoalViewController.m */,
 			);
 			path = HelpingHand;
 			sourceTree = "<group>";
@@ -224,6 +238,8 @@
 		5267C56E1853B788001C4889 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				47373CB71853EFBC0051E619 /* TopNavBar.png */,
+				47373CB01853E2900051E619 /* Screen4BG.png */,
 				47373CA61853BAAD0051E619 /* HHSplash.png */,
 				5267C5621853B709001C4889 /* HHLogo.png */,
 				5267C5631853B709001C4889 /* OrangeBackground.png */,
@@ -311,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5267C55E1853B1DE001C4889 /* NotebookImageItemCell.xib in Resources */,
+				47373CB81853EFBC0051E619 /* TopNavBar.png in Resources */,
 				454190A31852E7BC005B09D6 /* InfoPlist.strings in Resources */,
 				47373CA71853BAAD0051E619 /* HHSplash.png in Resources */,
 				5267C5671853B709001C4889 /* OrangeBackground.png in Resources */,
@@ -318,6 +335,7 @@
 				454190AB1852E7BC005B09D6 /* Images.xcassets in Resources */,
 				5267C5681853B709001C4889 /* Screen2HelpQuestion.png in Resources */,
 				5267C5661853B709001C4889 /* HHLogo.png in Resources */,
+				47373CB11853E2900051E619 /* Screen4BG.png in Resources */,
 				5267C55C1853B1B6001C4889 /* NotebookTextItemCell.xib in Resources */,
 				5267C5691853B709001C4889 /* TwitterButton.png in Resources */,
 			);
@@ -376,10 +394,12 @@
 				47373CA51853B91C0051E619 /* HHSplashViewController.m in Sources */,
 				5267C56C1853B73B001C4889 /* HHLoginViewController.m in Sources */,
 				454190A91852E7BC005B09D6 /* AppDelegate.m in Sources */,
+				47373CAA1853C6110051E619 /* HHLearnViewController.m in Sources */,
 				5267C5611853B1F6001C4889 /* NotebookImageItemCell.m in Sources */,
 				454190CB1852F584005B09D6 /* TaskListVC.m in Sources */,
 				5267C5531853A187001C4889 /* NotebookListVC.m in Sources */,
 				454190A51852E7BC005B09D6 /* main.m in Sources */,
+				47373CAF1853DEAB0051E619 /* HHGoalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,9 +17,9 @@
     UIView *_view;
 }
 
-- (id)init
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super init];
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         UIGraphicsBeginImageContext([UIScreen mainScreen].bounds.size);
         UIImage *splash = [UIImage imageNamed:@"HHSplash.png"];
@@ -30,13 +30,27 @@
         _view = [[UIView alloc] initWithFrame:viewRect];
         _view.backgroundColor = [UIColor colorWithPatternImage:resizedSplash];
         self.view = _view;
+        NSLog(@"INIT");
+        [self viewDidLoad];
     }
     return self;
 }
 
 - (void)viewDidLoad
 {
-	
+    [super viewDidLoad];
+
+UITapGestureRecognizer *singleFingerTap =
+[[UITapGestureRecognizer alloc] initWithTarget:self
+                                        action:@selector(handleSingleTap:)];
+[self.view addGestureRecognizer:singleFingerTap];
+
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
+    HHLoginViewController *svc = [[HHLoginViewController alloc] init];
+    
+    [self.navigationController pushViewController:svc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

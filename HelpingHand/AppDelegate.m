@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "TaskListVC.h"
 #import "HHSplashViewController.h"
+#import "HHSplashViewController.h"
 
 @implementation AppDelegate
 
@@ -17,9 +18,11 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    TaskListVC *tvc = [[TaskListVC alloc] init];
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tvc];
+    HHSplashViewController *splash = [[HHSplashViewController alloc] initWithNibName:NULL bundle:NULL];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:splash];
     self.window.rootViewController = nvc;
+    nvc.navigationBarHidden = YES;
+    //self.window.rootViewController = [[HHSplashViewController alloc] init];
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
