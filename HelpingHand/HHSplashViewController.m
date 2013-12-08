@@ -39,12 +39,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+<<<<<<< HEAD
     
     UITapGestureRecognizer *singleFingerTap =
     [[UITapGestureRecognizer alloc] initWithTarget:self
                                             action:@selector(handleSingleTap:)];
     [self.view addGestureRecognizer:singleFingerTap];
     
+=======
+
+UITapGestureRecognizer *singleFingerTap =
+[[UITapGestureRecognizer alloc] initWithTarget:self
+                                        action:@selector(handleSingleTap:)];
+[self.view addGestureRecognizer:singleFingerTap];
+
+>>>>>>> bda692cfcd5f9e6efe6c32393b50886b75d904e5
 }
 
 - (void)handleSingleTap:(UITapGestureRecognizer *)recognizer {
