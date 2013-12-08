@@ -18,12 +18,20 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+<<<<<<< HEAD
     HHSplashViewController *splash = [[HHSplashViewController alloc] init];
+=======
+    HHSplashViewController *splash = [[HHSplashViewController alloc] initWithNibName:NULL bundle:NULL];
+>>>>>>> bda692cfcd5f9e6efe6c32393b50886b75d904e5
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:splash];
     self.window.rootViewController = nvc;
     nvc.navigationBarHidden = YES;
     //self.window.rootViewController = [[HHSplashViewController alloc] init];
+<<<<<<< HEAD
     NSLog(@"APP");
+=======
+    
+>>>>>>> bda692cfcd5f9e6efe6c32393b50886b75d904e5
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
