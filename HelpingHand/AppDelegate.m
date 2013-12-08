@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "NotebookListTableVC.h"
+#import "TaskListVC.h"
+#import "HHSplashViewController.h"
 #import "HHSplashViewController.h"
 
 @implementation AppDelegate
@@ -17,10 +18,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    NotebookListTableVC *tvc = [[NotebookListTableVC alloc] init];
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:tvc];
+    HHSplashViewController *splash = [[HHSplashViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:splash];
     self.window.rootViewController = nvc;
-    
+    nvc.navigationBarHidden = YES;
+    //self.window.rootViewController = [[HHSplashViewController alloc] init];
+    NSLog(@"APP");
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
@@ -35,7 +38,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 

@@ -39,10 +39,16 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked.png" translatesAutoresizingMaskIntoConstraints="NO" id="8wX-hG-Fua">
+                        <rect key="frame" x="10" y="95" width="15" height="16"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="po0-9X-m0o" firstAttribute="top" secondItem="UPL-bG-u0h" secondAttribute="top" constant="5" id="07t-CH-SBq"/>
+                    <constraint firstItem="8wX-hG-Fua" firstAttribute="top" secondItem="U0O-ii-NCI" secondAttribute="top" id="C9X-yn-oe3"/>
                     <constraint firstItem="duR-YI-Puw" firstAttribute="leading" secondItem="po0-9X-m0o" secondAttribute="leading" id="ELp-Jr-fpn"/>
+                    <constraint firstItem="8wX-hG-Fua" firstAttribute="leading" secondItem="kka-gg-dpZ" secondAttribute="leading" id="Jj5-bT-VzI"/>
                     <constraint firstItem="duR-YI-Puw" firstAttribute="top" secondItem="po0-9X-m0o" secondAttribute="bottom" constant="10" id="OeW-Zn-xVw"/>
                     <constraint firstItem="po0-9X-m0o" firstAttribute="leading" secondItem="UPL-bG-u0h" secondAttribute="leading" constant="10" id="P1Z-l5-3wI"/>
                     <constraint firstAttribute="trailing" secondItem="po0-9X-m0o" secondAttribute="trailing" constant="5" id="PDj-QP-yzt"/>
@@ -56,4 +62,7 @@
             </tableViewCellContentView>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Unchecked.png" width="15" height="16"/>
+    </resources>
 </document>

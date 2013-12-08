@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:HelpingHand/HHLoginViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:HelpingHand/HHLoginViewController.m">
+   </FileRef>
+   <FileRef
       location = "group:HelpingHand.xcodeproj">
    </FileRef>
    <FileRef

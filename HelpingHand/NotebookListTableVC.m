@@ -13,6 +13,7 @@
 @interface NotebookListTableVC ()
 
 @property (nonatomic, strong) NSMutableArray *notebookItems;
+@property (nonatomic, strong) NSString *currentSection;
 - (void)reload;
 
 @end
@@ -71,7 +72,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -86,16 +87,28 @@
     static NSString *ImageCellIdentifier = @"NotebookImageItemCell";
     static NSString *TextCellIdentifier = @"NotebookTextItemCell";
     
-    NotebookTextItemCell *cell = [tableView dequeueReusableCellWithIdentifier:TextCellIdentifier forIndexPath:indexPath];
-    //NotebookImageItemCell *imageCell = [tableView dequeueReusableCellWithIdentifier:ImageCellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell;
     
-    return cell;
+    if(indexPath.section == 0) {
+        NotebookTextItemCell *cell = [tableView dequeueReusableCellWithIdentifier:TextCellIdentifier forIndexPath:indexPath];
+        return cell;
+    } else {
+        NotebookImageItemCell *cell = [tableView dequeueReusableCellWithIdentifier:ImageCellIdentifier forIndexPath:indexPath];
+        return cell;
+    }
+    
+    //NotebookImageItemCell *imageCell = [tableView dequeueReusableCellWithIdentifier:ImageCellIdentifier forIndexPath:indexPath];
 }
 
 
 -(float)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     
-    return  130.0;
+    return 0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 140;
 }
 
 /*
